@@ -3,7 +3,7 @@ import coffees from "./../data/coffees";
 import CoffeeItem from "./CoffeeItem";
 import { nanoid } from "nanoid";
 
-const CoffeeList = () => {
+const CoffeeList = ({ isOrdered }) => {
   const addToBasketFn = (e) => {
     e.preventDefault();
 
@@ -19,8 +19,10 @@ const CoffeeList = () => {
     console.log(newBasketItem);
   };
 
+  const ListTag = isOrdered ? "ul" : "ol";
+
   return (
-    <ul className="CoffeeList">
+    <ListTag className="CoffeeList">
       {coffees.map((coffee) => (
         <CoffeeItem
           key={coffee.id}
@@ -30,7 +32,7 @@ const CoffeeList = () => {
           // basketGotClickedFn={() => console.log("basket got clicked")}
         />
       ))}
-    </ul>
+    </ListTag>
   );
 };
 

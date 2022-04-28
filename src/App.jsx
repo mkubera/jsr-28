@@ -7,7 +7,7 @@ const App = () => {
     <>
       <div className="App">
         <header className="App-header">
-          <CoffeeList />
+          <CoffeeList isOrdered={!true} />
           <Basket />
         </header>
       </div>
