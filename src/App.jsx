@@ -4,6 +4,7 @@ import ChuckJoke from "./components/ChuckJoke";
 import Basket from "./components/Basket";
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
+import Loading from "./class-components/Loading";
 
 const App = () => {
   const [basket, setBasket] = useState([]);
@@ -27,6 +28,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <Loading />
         <ChuckJoke />
         <CoffeeList addToBasketFn={addToBasketFn} isOrdered={!true} />
         <Basket basket={basket} />
