@@ -5,6 +5,7 @@ import Basket from "./components/Basket";
 import React, { useState } from "react";
 import { nanoid } from "nanoid";
 import Loading from "./class-components/Loading";
+import Counter from "./class-components/Counter";
 
 const App = () => {
   const [basket, setBasket] = useState([]);
@@ -28,10 +29,13 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Loading />
+        <Counter init={3} />
+        <Counter init={13} />
+        <Counter init={103} />
+        {/* <Loading />
         <ChuckJoke />
         <CoffeeList addToBasketFn={addToBasketFn} isOrdered={!true} />
-        <Basket basket={basket} />
+        <Basket basket={basket} /> */}
       </header>
     </div>
   );
