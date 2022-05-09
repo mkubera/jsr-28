@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import coffees from "./../data/coffees";
 import CoffeeItem from "./CoffeeItem";
 

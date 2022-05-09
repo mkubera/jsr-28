@@ -1,30 +1,31 @@
 import "./App.css";
-import CoffeeList from "./components/CoffeeList";
-import ChuckJoke from "./components/ChuckJoke";
-import Basket from "./components/Basket";
-import React, { useState } from "react";
-import { nanoid } from "nanoid";
-import Loading from "./class-components/Loading";
+// import CoffeeList from "./components/CoffeeList";
+// import ChuckJoke from "./components/ChuckJoke";
+// import Basket from "./components/Basket";
+import React from "react";
+// import React, { useState } from "react";
+// import { nanoid } from "nanoid";
+// import Loading from "./class-components/Loading";
 import Counter from "./class-components/Counter";
 
 const App = () => {
-  const [basket, setBasket] = useState([]);
+  // const [basket, setBasket] = useState([]);
 
-  const addToBasketFn = (e) => {
-    e.preventDefault();
+  // const addToBasketFn = (e) => {
+  //   e.preventDefault();
 
-    const { id, numberOfItems, dedication } = e.currentTarget.elements;
+  //   const { id, numberOfItems, dedication } = e.currentTarget.elements;
 
-    const newBasketItem = {
-      id: nanoid(),
-      coffeeId: id.value,
-      numberOfItems: Number(numberOfItems.value),
-      dedication: dedication.value,
-    };
+  //   const newBasketItem = {
+  //     id: nanoid(),
+  //     coffeeId: id.value,
+  //     numberOfItems: Number(numberOfItems.value),
+  //     dedication: dedication.value,
+  //   };
 
-    console.log(newBasketItem);
-    setBasket((oldBasket) => [...oldBasket, newBasketItem]);
-  };
+  //   console.log(newBasketItem);
+  //   setBasket((oldBasket) => [...oldBasket, newBasketItem]);
+  // };
 
   return (
     <div className="App">

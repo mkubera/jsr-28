@@ -14,7 +14,7 @@ const ChuckJoke = () => {
       .then((data) => {
         console.log(data);
         setJoke(() => data.value);
-        // setIcon(() => data.icon_url);
+        setIcon(() => data.icon_url);
       })
       .catch((err) => console.log(err));
   }, []);

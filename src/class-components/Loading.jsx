@@ -1,4 +1,5 @@
-import React, { Component, useEffect, useState } from "react";
+// import React, { Component, useEffect, useState } from "react";
+import React, { Component } from "react";
 
 // Klasa:
 // 1. Wlasciwosci (properties)
